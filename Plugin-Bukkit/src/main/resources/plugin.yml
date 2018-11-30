@@ -1,0 +1,13 @@
+name: PluginBreaker
+version: ${project.version}
+
+main: org.dreamexposure.pluginbreaker.plugin.bukkit.PluginBreaker
+api-version: 1.13
+
+prefix: PluginBreaker
+depend: [NovaLib]
+
+author: DreamExposure
+authors: [NovaFox161]
+description: Tests and Breaks DE plugins for debugging purposes
+website: https://www.dreamexposure.org

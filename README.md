@@ -1,0 +1,1 @@
+This is literally just a plugin that is used in our development environments to test and break our plugins before release. This is to ensure all releases are stable and fully tested.
