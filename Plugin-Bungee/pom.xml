@@ -26,7 +26,7 @@
         <dependency>
             <groupId>org.dreamexposure.novalib</groupId>
             <artifactId>API</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${novalib.version}</version>
             <scope>provided</scope>
             <type>jar</type>
         </dependency>

@@ -10,6 +10,8 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
+
+        <novalib.version>1.1.0-SNAPSHOT</novalib.version>
     </properties>
 
     <groupId>org.dreamexposure.pluginbreaker</groupId>
@@ -26,24 +28,16 @@
     <description>Tests and Breaks DE plugins for debugging purposes</description>
     <url>https://www.dreamexposure.org</url>
 
-    <distributionManagement>
-        <repository>
-            <id>nova-release-pub</id>
-            <name>Releases</name>
-            <url>http://repo.novafox161.com/repository/nova-release-pub/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nova-snapshots-pub</id>
-            <name>Snapshots</name>
-            <url>http://repo.novafox161.com/repository/nova-snapshots-pub/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <repositories>
-        <!--Maven Central-->
+        <!--Private Repo for CB Builds-->
         <repository>
-            <id>central</id>
-            <url>http://central.maven.org/maven2/</url>
+            <id>dreamexposure-private</id>
+            <url>https://emily.dreamexposure.org/artifactory/dreamexposure-private/</url>
+        </repository>
+        <!--Public Repo-->
+        <repository>
+            <id>dreamexposure-public</id>
+            <url>https://emily.dreamexposure.org/artifactory/dreamexposure-public/</url>
         </repository>
         <!--Bukkit Repo-->
         <repository>
@@ -54,11 +48,6 @@
         <repository>
             <id>bungeecord-repo</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-        <!--Private Repo for CB Builds-->
-        <repository>
-            <id>nova-private</id>
-            <url>http://repo.novafox161.com/repository/nova-private/</url>
         </repository>
     </repositories>
 
