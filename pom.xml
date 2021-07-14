@@ -5,18 +5,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <!--Project Settings-->
+        <revision>1.0.0-SNAPSHOT</revision>
+
+        <!--Versions-->
+        <novalib.version>1.1.0-SNAPSHOT</novalib.version>
+
+        <!--Compiler Settings-->
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
-
-        <novalib.version>1.1.0-SNAPSHOT</novalib.version>
     </properties>
+
+    <parent>
+        <artifactId>DreamExposure-Parent</artifactId>
+        <groupId>org.dreamexposure</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
 
     <groupId>org.dreamexposure.pluginbreaker</groupId>
     <artifactId>PluginBreaker</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -29,25 +40,10 @@
     <url>https://www.dreamexposure.org</url>
 
     <repositories>
-        <!--Private Repo for CB Builds-->
-        <repository>
-            <id>dreamexposure-private</id>
-            <url>https://emily.dreamexposure.org/artifactory/dreamexposure-private/</url>
-        </repository>
         <!--Public Repo-->
         <repository>
             <id>dreamexposure-public</id>
             <url>https://emily.dreamexposure.org/artifactory/dreamexposure-public/</url>
-        </repository>
-        <!--Bukkit Repo-->
-        <repository>
-            <id>bukkit-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-        </repository>
-        <!--Bungeecord Repo-->
-        <repository>
-            <id>bungeecord-repo</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
     </repositories>
 
@@ -56,10 +52,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>${maven.plugin.compiler.version}</version>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>16</source>
+                    <target>16</target>
                 </configuration>
             </plugin>
         </plugins>
