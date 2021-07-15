@@ -1,4 +1,4 @@
-package org.dreamexposure.pluginbreaker.bukkit.plugin;
+package org.dreamexposure.pluginbreaker.plugin.bukkit;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.dreamexposure.novalib.api.NovaLibAPI;
@@ -16,7 +16,7 @@ public final class PluginBreaker extends JavaPlugin {
     @Override
     public void onEnable() {
         NovaLibAPI.getApi().hookBukkitPlugin(this);
-        
+
     }
     
     @Override
